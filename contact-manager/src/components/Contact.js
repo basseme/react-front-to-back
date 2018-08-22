@@ -1,6 +1,19 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 class Contact extends Component {
+  /* -----------------------------------------
+    Standard components can declare propTypes
+    directly in the class as static. This is
+    just an option, doing it outside class
+    is perfectly acceptable.
+  ------------------------------------------*/
+  // static propTypes = {
+  //   name: PropTypes.boolean.isRequired,
+  //   email: PropTypes.string.isRequired,
+  //   phone: PropTypes.string.isRequired  
+  // }
+
   render() {
     // destructure to extract props
     const { name, email, phone } = this.props;
@@ -15,5 +28,11 @@ class Contact extends Component {
     )
   }
 }
+
+Contact.propTypes = {
+  name: PropTypes.boolean.isRequired,
+  email: PropTypes.string.isRequired,
+  phone: PropTypes.string.isRequired  
+};
 
 export default Contact;
