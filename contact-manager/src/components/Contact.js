@@ -9,7 +9,7 @@ class Contact extends Component {
     is perfectly acceptable.
   ------------------------------------------*/
   // static propTypes = {
-  //   name: PropTypes.boolean.isRequired,
+  //   name: PropTypes.string.isRequired,
   //   email: PropTypes.string.isRequired,
   //   phone: PropTypes.string.isRequired  
   // }
@@ -30,7 +30,7 @@ class Contact extends Component {
 }
 
 Contact.propTypes = {
-  name: PropTypes.boolean.isRequired,
+  name: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired,
   phone: PropTypes.string.isRequired  
 };
